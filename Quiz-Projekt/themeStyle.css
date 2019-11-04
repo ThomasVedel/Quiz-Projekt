@@ -1,0 +1,52 @@
+h1 {
+    color: #d4af37;
+}
+
+.sportQuiz img {
+    float: left;
+    margin-left: 10px;
+    width: 20%;
+    height: 20%;
+}
+
+.animalQuiz img{
+    float: left;
+    margin-left: 70px;
+    width: 20%;
+    height: 20%;
+}
+
+.memeQuiz img{
+    float: right;
+    margin-left: 70px;
+    width: 20%;
+    height: 20%;
+}
+
+.martinQuiz img{
+    float: right;
+
+    margin-right: 10px;
+    width: 20%;
+    height: 205%;
+}
+
+.sportQuiz img:hover {
+    width: 21%;
+    height: 21%;
+}
+
+.memeQuiz img:hover {
+    width: 21%;
+    height: 21%;
+}
+
+.animalQuiz img:hover {
+    width: 21%;
+    height: 21%;
+}
+
+.martinQuiz img:hover {
+    width: 21%;
+    height: 21%;
+}

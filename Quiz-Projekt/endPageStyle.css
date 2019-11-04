@@ -1,0 +1,39 @@
+.endHeader {
+    color: #d4af37;
+    text-align: center;
+}
+
+.firework {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.TimeScore {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: #d4af37
+}
+
+.PointScore {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: #d4af37
+}
+
+.btn-group input {
+    width: 50%;
+    float: right;
+    background-color: #d4af37; 
+    padding: 10px 35px; /* Button size */
+    }
+
+    /* Change color on hover */
+.btn-group input:hover {
+    background-color: #aaa9ad;
+}
