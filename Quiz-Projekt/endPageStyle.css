@@ -31,9 +31,10 @@
     float: right;
     background-color: #d4af37; 
     padding: 10px 35px; /* Button size */
+    opacity: 0.6;
+    transition: 0.3s;
     }
 
-    /* Change color on hover */
 .btn-group input:hover {
-    background-color: #aaa9ad;
+    opacity: 1;
 }

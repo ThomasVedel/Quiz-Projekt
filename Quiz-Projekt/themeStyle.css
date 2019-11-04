@@ -2,51 +2,174 @@ h1 {
     color: #d4af37;
 }
 
-.sportQuiz img {
+.sportContainer {
+    margin-left: 50px;
     float: left;
-    margin-left: 10px;
+    position: relative;
     width: 20%;
-    height: 20%;
 }
 
-.animalQuiz img{
+.sportImage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.sportOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #d4af37;
+}
+
+.sportContainer:hover .sportOverlay {
+    opacity: 1;
+}
+
+.sportText {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.animalContainer {
+    margin-left: 50px;
     float: left;
-    margin-left: 70px;
+    position: relative;
     width: 20%;
-    height: 20%;
 }
 
-.memeQuiz img{
-    float: right;
-    margin-left: 70px;
+.animalImage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.animalOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #d4af37;
+}
+
+.animalContainer:hover .animalOverlay {
+    opacity: 1;
+}
+
+.animalText {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.memeContainer {
+    margin-left: 50px;
+    float: left;
+    position: relative;
     width: 20%;
-    height: 20%;
 }
 
-.martinQuiz img{
-    float: right;
+.memeImage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
-    margin-right: 10px;
+.memeOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #d4af37;
+}
+
+.memeContainer:hover .memeOverlay {
+    opacity: 1;
+}
+
+.memeText {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+
+.musicContainer {
+    margin-left: 50px;
+    float: left;
+    position: relative;
     width: 20%;
-    height: 205%;
 }
 
-.sportQuiz img:hover {
-    width: 21%;
-    height: 21%;
+.musicImage {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-.memeQuiz img:hover {
-    width: 21%;
-    height: 21%;
+.musicOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #d4af37;
 }
 
-.animalQuiz img:hover {
-    width: 21%;
-    height: 21%;
+.musicContainer:hover .musicOverlay {
+    opacity: 1;
 }
 
-.martinQuiz img:hover {
-    width: 21%;
-    height: 21%;
+.musicText {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }

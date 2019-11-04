@@ -29,10 +29,11 @@ h2 {
     float: right;
     background-color: #d4af37; 
     padding: 10px 35px; /* Button size */
-    }
-
-    /* Change color on hover */
-.buttonAnswers input:hover {
-    background-color: #aaa9ad;
+    opacity: 0.6;
+    transition: 0.3s;
 }
-        
+
+/* Change color on hover */
+.buttonAnswers input:hover {
+    opacity: 1;
+}
