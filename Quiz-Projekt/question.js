@@ -8,6 +8,7 @@ function Question(id, question, option1, option2, option3, option4, answer) {
     this.answer = answer;
 }
 
+var path = "file:///C:/Users/mehgn/OneDrive/Dokumenter/Brackets/Aflevering1Gitten/Quiz-Projekt/Quiz-Projekt/";
 var sportQuestion1 = new Question(1, 'Who is this man?', "Christian Eriksen", "Kasper Schmeichel", "Jan Midtgaard", "Donald Obama", "Kasper Schmeichel");
 var sportQuestion2 = new Question(2, 'What is the national sport in Japan?', "Fencing", "Rugby", "Sumo Wrestling", "Jiu Jitsu", "Sumo Wrestling");
 var sportQuestion3 = new Question(3, 'What was the Olympic city of 1992?', "Barcelona", "London", "Hong Kong", "Copenhagen", "Barcelona");
@@ -112,31 +113,67 @@ function updateMusicQuestion4() {
     document.getElementById("question").innerHTML = musicQuestion4.question;
 }
 
-if (location.href == 'SportQuestion1.html') {
-    updateQuestion1()
-} 
-if (location.href == 'SportQuestion2.html') {
-    updateQuestion2()
+function updateMemeQuestion3() {
+
+    //document.getElementById("questionPicture").src='C:\Users\mehgn\OneDrive\Dokumenter\Brackets\Aflevering1\Christian Eriksen.jpg';
+
+    document.getElementById("button0").value = memeQuestion1.option1;
+    document.getElementById("button1").value = memeQuestion1.option2;
+    document.getElementById("button3").value = memeQuestion1.option3;
+    document.getElementById("button4").value = memeQuestion1.option4;
+
+    document.getElementById("question").innerHTML = memeQuestion1.question;
 }
-if (location.href == 'SportQuestion3.html') {
-    updateQuestion3()
+function updateMemeQuestion4() {
+
+    //document.getElementById("questionPicture").src='C:\Users\mehgn\OneDrive\Dokumenter\Brackets\Aflevering1\Christian Eriksen.jpg';
+
+    document.getElementById("button0").value = memeQuestion2.option1;
+    document.getElementById("button1").value = memeQuestion2.option2;
+    document.getElementById("button2").value = memeQuestion2.option3;
+    document.getElementById("button3").value = memeQuestion2.option4;
+
+    document.getElementById("question").innerHTML = memeQuestion2.question;
 }
-if (location.href == 'SportQuestion4.html') {
-    updateQuestion4()
+function updateMemeQuestion5() {
+
+    //document.getElementById("questionPicture").src='C:\Users\mehgn\OneDrive\Dokumenter\Brackets\Aflevering1\Christian Eriksen.jpg';
+
+    document.getElementById("button0").value = memeQuestion3.option1;
+    document.getElementById("button1").value = memeQuestion3.option2;
+    document.getElementById("button2").value = memeQuestion3.option3;
+    document.getElementById("button3").value = memeQuestion3.option4;
+
+    document.getElementById("question").innerHTML = memeQuestion3.question;
 }
 
-if (location.href == 'musicQuestion1.html') {
+
+if (location.href == path + 'SportQuestion1.html') {
+    updateQuestion1()
+} 
+if (location.href == path +'SportQuestion2.html') {
+    updateQuestion2()
+}
+if (location.href == path +'SportQuestion3.html') {
+    updateQuestion3()
+}
+if (location.href == path +'SportQuestion4.html') {
+    updateQuestion4()
+}   
+
+if (location.href == path +'musicQuestion1.html') {
     updateMusicQuestion1()
 }
 
-if (location.href == 'musicQuestion2.html') {
+if (location.href == path +'musicQuestion2.html') {
     updateMusicQuestion2()
 }
 
-if (location.href == 'musicQuestion3.html') {
+if (location.href == path +'musicQuestion3.html') {
     updateMusicQuestion3()
 }
 
-if (location.href == 'musicQuestion4.html') {
+if (location.href == path +'musicQuestion4.html') {
     updateMusicQuestion4()
 }
+
