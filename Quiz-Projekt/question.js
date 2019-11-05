@@ -13,6 +13,11 @@ var sportQuestion2 = new Question(2, 'What is the national sport in Japan?', "Fe
 var sportQuestion3 = new Question(3, 'What was the Olympic city of 1992?', "Barcelona", "London", "Hong Kong", "Copenhagen", "Barcelona");
 var sportQuestion4 = new Question(4, 'How matches did Mohammed Ali lose in his career?', "1", "3", "10", "15", "1");
 
+var musicQuestion1 = new Question(1, 'What is the name of this gentleman?', "50 Cent", "David Beckham", "Machine Gun Kelly", "Frank Sinatra", "Frank Sinatra");
+var musicQuestion2 = new Question(2, 'What is the name of Jay-Zs wife?', "Elisabeth", "Kylle", "Beyonce", "Ibi Makienok", "Beyonce");
+var musicQuestion3 = new Question(3, 'At what age did Elvis Presley die?', "39", "42", "58", "49", "42");
+var musicQuestion4 = new Question(4, 'What is the name of the rap-group, who made hits like "stik den ind" and "Makreles uber alles"', "Suspekt", "G-unit", "TDB-Den Klamme Hets", "F.I.P");
+
 
 //{sportQuestion1, sportQuestion2, sportQuestion3, sportQuestion4};
 
@@ -63,16 +68,71 @@ function updateQuestion4() {
     document.getElementById("question").innerHTML = sportQuestion4.question;
 }
 
+function updateMusicQuestion1() {
 
-if (location.href == 'file:///C:/Users/mehgn/OneDrive/Dokumenter/Brackets/Aflevering1Gitten/Quiz-Projekt/Quiz-Projekt/SportQuestion1.html') {
+    document.getElementById("button0").value = musicQuestion1.option1;
+    document.getElementById("button1").value = musicQuestion1.option2;
+    document.getElementById("button2").value = musicQuestion1.option3;
+    document.getElementById("button3").value = musicQuestion1.option4;
+
+    document.getElementById("question").innerHTML = musicQuestion1.question;
+}
+
+function updateMusicQuestion2() {
+
+    document.getElementById("button0").value = musicQuestion2.option1;
+    document.getElementById("button1").value = musicQuestion2.option2;
+    document.getElementById("button2").value = musicQuestion2.option3;
+    document.getElementById("button3").value = musicQuestion2.option4;
+
+    document.getElementById("question").innerHTML = musicQuestion2.question;
+}
+
+function updateMusicQuestion3() {
+
+    document.getElementById("button0").value = musicQuestion3.option1;
+    document.getElementById("button1").value = musicQuestion3.option2;
+    document.getElementById("button2").value = musicQuestion3.option3;
+    document.getElementById("button3").value = musicQuestion3.option4;
+
+    document.getElementById("question").innerHTML = musicQuestion3.question;
+}
+
+function updateMusicQuestion4() {
+
+    document.getElementById("button0").value = musicQuestion4.option1;
+    document.getElementById("button1").value = musicQuestion4.option2;
+    document.getElementById("button2").value = musicQuestion4.option3;
+    document.getElementById("button3").value = musicQuestion4.option4;
+
+    document.getElementById("question").innerHTML = musicQuestion4.question;
+}
+
+if (location.href == 'SportQuestion1.html') {
     updateQuestion1()
 } 
-if (location.href == 'file:///C:/Users/mehgn/OneDrive/Dokumenter/Brackets/Aflevering1Gitten/Quiz-Projekt/Quiz-Projekt/SportQuestion2.html') {
+if (location.href == 'SportQuestion2.html') {
     updateQuestion2()
 }
-if (location.href == 'file:///C:/Users/mehgn/OneDrive/Dokumenter/Brackets/Aflevering1Gitten/Quiz-Projekt/Quiz-Projekt/SportQuestion3.html') {
+if (location.href == 'SportQuestion3.html') {
     updateQuestion3()
 }
-if (location.href == 'file:///C:/Users/mehgn/OneDrive/Dokumenter/Brackets/Aflevering1Gitten/Quiz-Projekt/Quiz-Projekt/SportQuestion4.html') {
+if (location.href == 'SportQuestion4.html') {
     updateQuestion4()
+}
+
+if (location.href == 'musicQuestion1.html') {
+    updateMusicQuestion1()
+}
+
+if (location.href == 'musicQuestion2.html') {
+    updateMusicQuestion2()
+}
+
+if (location.href == 'musicQuestion3.html') {
+    updateMusicQuestion3()
+}
+
+if (location.href == 'musicQuestion4.html') {
+    updateMusicQuestion4()
 }
