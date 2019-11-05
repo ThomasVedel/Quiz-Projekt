@@ -14,12 +14,12 @@ function correctGuess(){
     document.getElementById("checkAnswer").innerHTML = "True"
     points++
     if (points == 10){
-        window.location = "C:/Users/Bruger/Desktop/Quiz-Projekt/endPage.html"
+        window.location = "C:/Users/mehgn/OneDrive/Dokumenter/Brackets/Aflevering1Gitten/Quiz-Projekt/Quiz-Projekt/endPage.html"
     }
 }
 
 document.getElementById("button0").onclick = function () {wrongGuess()}
-document.getElementById("button1").onclick = function () {correctGuess()}
-document.getElementById("button2").onclick = function () {wrongGuess()}
+document.getElementById("button1").onclick = function () {wrongGuess()}
+document.getElementById("button2").onclick = function () {correctGuess()}
 document.getElementById("button3").onclick = function () {wrongGuess()}
 
