@@ -18,8 +18,29 @@ function correctGuess(){
     }
 }
 
-document.getElementById("button0").onclick = function () {wrongGuess()}
-document.getElementById("button1").onclick = function () {wrongGuess()}
-document.getElementById("button2").onclick = function () {correctGuess()}
-document.getElementById("button3").onclick = function () {wrongGuess()}
 
+
+if (location.href == 'file:///C:/Users/mehgn/OneDrive/Dokumenter/Brackets/Aflevering1Gitten/Quiz-Projekt/Quiz-Projekt/SportQuestion1.html') {
+    document.getElementById("button0").onclick = function () {wrongGuess()}
+    document.getElementById("button1").onclick = function () {correctGuess()}
+    document.getElementById("button2").onclick = function () {wrongGuess()}
+    document.getElementById("button3").onclick = function () {wrongGuess()}
+} 
+if (location.href == 'file:///C:/Users/mehgn/OneDrive/Dokumenter/Brackets/Aflevering1Gitten/Quiz-Projekt/Quiz-Projekt/SportQuestion2.html') {
+    document.getElementById("button0").onclick = function () {wrongGuess()}
+    document.getElementById("button1").onclick = function () {wrongGuess()}
+    document.getElementById("button2").onclick = function () {correctGuess()}
+    document.getElementById("button3").onclick = function () {wrongGuess()}
+}
+if (location.href == 'file:///C:/Users/mehgn/OneDrive/Dokumenter/Brackets/Aflevering1Gitten/Quiz-Projekt/Quiz-Projekt/SportQuestion3.html') {
+    document.getElementById("button0").onclick = function () {correctGuess()}
+    document.getElementById("button1").onclick = function () {wrongGuess()}
+    document.getElementById("button2").onclick = function () {wrongGuess()}
+    document.getElementById("button3").onclick = function () {wrongGuess()}
+}
+if (location.href == 'file:///C:/Users/mehgn/OneDrive/Dokumenter/Brackets/Aflevering1Gitten/Quiz-Projekt/Quiz-Projekt/SportQuestion4.html') {
+    document.getElementById("button0").onclick = function () {correctGuess(}
+    document.getElementById("button1").onclick = function () {wrongGuess()}
+    document.getElementById("button2").onclick = function () {wrongGuess()}
+    document.getElementById("button3").onclick = function () {wrongGuess()}
+}
