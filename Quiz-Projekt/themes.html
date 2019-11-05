@@ -3,18 +3,11 @@
 <html>
     <head>
         <title>QUIZ GAME</title>
-        <link rel="icon" href="C:\Users\mehgn\OneDrive\Dokumenter\Brackets\Aflevering1Gitten\Quiz-Projekt\Quiz-Projekt\icon.png">
+        <link rel="icon" href="images/icon.png">
         <link rel="stylesheet" href="themeStyle.css">
 
-        <script>
-
-            function chooseSport(){
-                window.location = "C:/Users/mehgn/OneDrive/Dokumenter/Brackets/Aflevering1Gitten/Quiz-Projekt/Quiz-Projekt/Quiz.html"
-            }
-
-        </script>
-
     </head>
+
     <body>
 
         <center>
@@ -25,33 +18,35 @@
             </h1>
         </center>
 
-        <div class="sportContainer" onclick="chooseSport()">
-            <img src="C:\Users\mehgn\OneDrive\Dokumenter\Brackets\Aflevering1Gitten\Quiz-Projekt\Quiz-Projekt\Schmeichel.png" alt="Avatar" class="sportImage">
+        <div class="sportContainer" id="sportContainer" onclick="change()">
+            <img src="images/Schmeichel.png" alt="Avatar" class="sportImage">
             <div class="sportOverlay">
                 <div class="sportText">SPORTS</div>
             </div>
         </div>
 
-        <div class="animalContainer" onclick="chooseSport()">
-            <img src="C:\Users\mehgn\OneDrive\Dokumenter\Brackets\Aflevering1Gitten\Quiz-Projekt\Quiz-Projekt\animal.png" alt="Avatar" class="animalImage">
+        <div class="animalContainer" id="animalContainer">
+            <img src="images/animal.png" alt="Avatar" class="animalImage">
             <div class="animalOverlay">
                 <div class="animalText">ANIMALS</div>
             </div>
         </div>
 
-        <div class="memeContainer" onclick="chooseSport()">
-            <img src="C:\Users\mehgn\OneDrive\Dokumenter\Brackets\Aflevering1Gitten\Quiz-Projekt\Quiz-Projekt\meme.png" alt="Avatar" class="memeImage">
+        <div class="memeContainer" id="memeContainer">
+            <img src="images/meme.png" alt="Avatar" class="memeImage">
             <div class="memeOverlay">
                 <div class="memeText">MEMES</div>
             </div>
         </div>
 
-        <div class="musicContainer" onclick="chooseSport()">
-            <img src="C:\Users\mehgn\OneDrive\Dokumenter\Brackets\Aflevering1Gitten\Quiz-Projekt\Quiz-Projekt\music.png" alt="Avatar" class="musicImage">
+        <div class="musicContainer" id="musicContainer">
+            <img src="images/music.png" alt="Avatar" class="musicImage">
             <div class="musicOverlay">
                 <div class="musicText">MUSIC</div>
             </div>
         </div>
+
+        <script src="themesScript.js"></script>
 
     </body>
 
