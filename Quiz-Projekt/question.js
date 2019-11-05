@@ -120,7 +120,7 @@ function updateMemeQuestion3() {
     document.getElementById("button0").value = memeQuestion1.option1;
     document.getElementById("button1").value = memeQuestion1.option2;
     document.getElementById("button3").value = memeQuestion1.option3;
-    document.getElementById("button4").value = memeQuestion1.option4;
+    document.getElementById("button2").value = memeQuestion1.option4;
 
     document.getElementById("question").innerHTML = memeQuestion1.question;
 }
@@ -160,6 +160,16 @@ if (location.href == path +'SportQuestion3.html') {
 if (location.href == path +'SportQuestion4.html') {
     updateQuestion4()
 }   
+
+if (location.href == path + 'memeQuestion1.html') {
+    updateMemeQuestion3()
+} 
+if (location.href == path +'memeQuestion2.html') {
+    updateMemeQuestion4()
+}
+if (location.href == path +'memeQuestion3.html') {
+   updateMemeQuestion5()
+}
 
 if (location.href == path +'musicQuestion1.html') {
     updateMusicQuestion1()
