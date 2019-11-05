@@ -14,7 +14,7 @@ var sportQuestion3 = new Question(3, 'What was the Olympic city of 1992?', "Barc
 var sportQuestion4 = new Question(4, 'How matches did Mohammed Ali lose in his career?', "1", "3", "10", "15", "1");
 
 
-//{sportQuestion1, sportQuestion2, sportQuestion3, sportQuestion4};
+//var questionArray = [sportQuestion1, sportQuestion2, sportQuestion3, sportQuestion4];
 
 function updateQuestion1() {
     //document.getElementById("questionPicture").src='C:\Users\mehgn\OneDrive\Dokumenter\Brackets\Aflevering1Gitten\Quiz-Projekt\Quiz-Projekt\Schmeichel.png';
@@ -63,7 +63,9 @@ function updateQuestion4() {
     document.getElementById("question").innerHTML = sportQuestion4.question;
 }
 
+    
 
+         
 if (location.href == 'file:///C:/Users/mehgn/OneDrive/Dokumenter/Brackets/Aflevering1Gitten/Quiz-Projekt/Quiz-Projekt/SportQuestion1.html') {
     updateQuestion1()
 } 
