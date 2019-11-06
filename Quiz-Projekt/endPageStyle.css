@@ -39,3 +39,9 @@
 .btn-group input:hover {
     opacity: 1;
 }
+
+p {
+  float: left;
+  margin: 0 40%;
+}
+
