@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QUIZ GAME</title>
+        <link rel="icon" href="images/icon.png">
+        <link rel="stylesheet" href="endPageStyle.css"> 
+        
+        
+    </head>
+    <body>        
+        <h1 class="endHeader"> You Completed The Sports Quiz! </h1>
+        <img src="images/firework.gif" alt="Image Is Gone" id="firework" class="firework">
+
+        <div class="Score">
+            <center> <h1 class="TimeScore"> Time: 69 Seconds </h1> </center>
+            <p class = "p"> Your score: </p> 
+            <center> <h1 class="PointScore" id=h1> 0 </h1> </center>
+        </div>
+
+        <div class="btn-group">
+            <center> <input type="button" id="newQuizButton" value="New Quiz" onclick="newQuiz()" </input></center>
+            <center> <input type="button" id="tryAgainButton" value="Try Again" onclick="tryQuizAgain()" </input></center>
+        </div>
+        
+        
+        <script src="endPageScript.js"></script>
+        <script src="script.js"></script>
+        <script src="question.js"></script>
+
+    </body>
+
+</html>
