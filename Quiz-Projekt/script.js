@@ -131,7 +131,32 @@ if (location.href == path +'memeQuestion4.html') {
     document.getElementById("button2").onclick = function () {wrongGuess()}
     document.getElementById("button3").onclick = function () {correctGuess()}
 }
+if (location.href == path +'AnimalQuestion1.html') {
+    document.getElementById("button0").onclick = function () {wrongGuess()}
+    document.getElementById("button1").onclick = function () {correctGuess()}
+    document.getElementById("button2").onclick = function () {wrongGuess()}
+    document.getElementById("button3").onclick = function () {wrongGuess()}
+}
+if (location.href == path +'AnimalQuestion2.html') {
 
+    document.getElementById("button0").onclick = function () {wrongGuess()}
+    document.getElementById("button1").onclick = function () {wrongGuess()}
+    document.getElementById("button2").onclick = function () {correctGuess()}
+    document.getElementById("button3").onclick = function () {wrongGuess()}
+}
+if (location.href == path +'AnimalQuestion3.html') {
+
+    document.getElementById("button0").onclick = function () {wrongGuess()}
+    document.getElementById("button1").onclick = function () {wrongGuess()}
+    document.getElementById("button2").onclick = function () {wrongGuess()}
+    document.getElementById("button3").onclick = function () {correctGuess()}
+}
+if (location.href === path +'AnimalQuestion4.html') {
+    document.getElementById("button0").onclick = function () {wrongGuess()}
+    document.getElementById("button1").onclick = function () {correctGuess()}
+    document.getElementById("button2").onclick = function () {wrongGuess()}
+    document.getElementById("button3").onclick = function () {wrongGuess()}
+}
 function changeValue() {
   document.getElementById("demo").innerHTML = ++value;
 }
