@@ -8,6 +8,7 @@ function Question(id, question, option1, option2, option3, option4, answer) {
     this.answer = answer;
 }
 
+var path = "file:///C:/Users/mehgn/OneDrive/Dokumenter/Brackets/Aflevering1Gitten/Quiz-Projekt/Quiz-Projekt/";
 var sportQuestion1 = new Question(1, 'Who is this man?', "Christian Eriksen", "Kasper Schmeichel", "Jan Midtgaard", "Donald Obama", "Kasper Schmeichel");
 var sportQuestion2 = new Question(2, 'What is the national sport in Japan?', "Fencing", "Rugby", "Sumo Wrestling", "Jiu Jitsu", "Sumo Wrestling");
 var sportQuestion3 = new Question(3, 'What was the Olympic city of 1992?', "Barcelona", "London", "Hong Kong", "Copenhagen", "Barcelona");
@@ -18,17 +19,22 @@ var musicQuestion2 = new Question(2, 'What is the name of Jay-Zs wife?', "Elisab
 var musicQuestion3 = new Question(3, 'At what age did Elvis Presley die?', "39", "42", "58", "49", "42");
 var musicQuestion4 = new Question(4, 'What is the name of the rap-group, who made hits like "stik den ind" and "Makreles uber alles"', "Suspekt", "G-unit", "TDB-Den Klamme Hets", "F.I.P");
 
+var memeQuestion1 = new Question(1, 'What is this?', "Bike frog", "Dat boi", "Frogman", "A dank frog", "Dat boi");
+var memeQuestion2 = new Question(2, 'What happened to this meme?', "It has been deepfried", "It has been cooked", "It has been heavily edited", "It has been boiled", "It has been deepfried");
+var memeQuestion3 = new Question(3, 'Where is this meme from?', "Battlefield", "Call of Duty", "Counter Strike", "Dota", "Call of Duty");
+var memeQuestion4 = new Question(4, 'Which song made this girl legendary?', "Ocean man", "Shooting stars", "Man's not hot", "Boom boom boom", "Boom boom boom");
 
-//{sportQuestion1, sportQuestion2, sportQuestion3, sportQuestion4};
+var animalQuestion1 = new Question(1, 'Which animmal never sleeps?', "Deer", "Bullfrog", "Seals", "Whales", "Bullfrog");
+var animalQuestion2 = new Question(2, 'How many heart chambers does a cockroach have?', "6", "9", "12", "15", "12");
+var animalQuestion3 = new Question(3, 'Where is the horse from the greatest horsemovie ever from?', "Cimabue", "Cimbalom", "Cimbri", "Cimarron", "Cimarron");
+var animalQuestion4 = new Question(4, 'Out of 12, how many dogs survived the Titanic disaster?', "2", "3", "4", "5", "3");
+
 
 function updateQuestion1() {
-    //document.getElementById("questionPicture").src='C:\Users\mehgn\OneDrive\Dokumenter\Brackets\Aflevering1Gitten\Quiz-Projekt\Quiz-Projekt\Schmeichel.png';
-
     document.getElementById("button0").value = sportQuestion1.option1;
     document.getElementById("button1").value = sportQuestion1.option2;
     document.getElementById("button2").value = sportQuestion1.option3;
     document.getElementById("button3").value = sportQuestion1.option4;
-
     document.getElementById("question").innerHTML = sportQuestion1.question;
 }
 
@@ -108,31 +114,140 @@ function updateMusicQuestion4() {
     document.getElementById("question").innerHTML = musicQuestion4.question;
 }
 
-if (location.href == 'SportQuestion1.html') {
+function updateAnimalQuestion1() {
+
+    document.getElementById("button0").value = animalQuestion1.option1;
+    document.getElementById("button1").value = animalQuestion1.option2;
+    document.getElementById("button2").value = animalQuestion1.option3;
+    document.getElementById("button3").value = animalQuestion1.option4;
+
+    document.getElementById("question").innerHTML = animalQuestion1.question;
+}
+
+function updateAnimalQuestion2() {
+
+    document.getElementById("button0").value = animalQuestion2.option1;
+    document.getElementById("button1").value = animalQuestion2.option2;
+    document.getElementById("button2").value = animalQuestion2.option3;
+    document.getElementById("button3").value = animalQuestion2.option4;
+
+    document.getElementById("question").innerHTML = animalQuestion2.question;
+}
+
+function updateAnimalQuestion3() {
+
+    document.getElementById("button0").value = animalQuestion3.option1;
+    document.getElementById("button1").value = animalQuestion3.option2;
+    document.getElementById("button2").value = animalQuestion3.option3;
+    document.getElementById("button3").value = animalQuestion3.option4;
+
+    document.getElementById("question").innerHTML = animalQuestion3.question;
+}
+
+function updateAnimalQuestion4() {
+
+    document.getElementById("button0").value = animalQuestion4.option1;
+    document.getElementById("button1").value = animalQuestion4.option2;
+    document.getElementById("button2").value = animalQuestion4.option3;
+    document.getElementById("button3").value = animalQuestion4.option4;
+
+    document.getElementById("question").innerHTML = animalQuestion4.question;
+}
+
+function updateMemeQuestion1() {
+
+    //document.getElementById("questionPicture").src='C:\Users\mehgn\OneDrive\Dokumenter\Brackets\Aflevering1\Christian Eriksen.jpg';
+
+    document.getElementById("button0").value = memeQuestion1.option1;
+    document.getElementById("button1").value = memeQuestion1.option2;
+    document.getElementById("button3").value = memeQuestion1.option3;
+    document.getElementById("button2").value = memeQuestion1.option4;
+
+    document.getElementById("question").innerHTML = memeQuestion1.question;
+}
+
+function updateMemeQuestion2() {
+
+    //document.getElementById("questionPicture").src='C:\Users\mehgn\OneDrive\Dokumenter\Brackets\Aflevering1\Christian Eriksen.jpg';
+
+    document.getElementById("button0").value = memeQuestion2.option1;
+    document.getElementById("button1").value = memeQuestion2.option2;
+    document.getElementById("button2").value = memeQuestion2.option3;
+    document.getElementById("button3").value = memeQuestion2.option4;
+
+    document.getElementById("question").innerHTML = memeQuestion2.question;
+}
+
+function updateMemeQuestion3() {
+
+    //document.getElementById("questionPicture").src='C:\Users\mehgn\OneDrive\Dokumenter\Brackets\Aflevering1\Christian Eriksen.jpg';
+
+    document.getElementById("button0").value = memeQuestion3.option1;
+    document.getElementById("button1").value = memeQuestion3.option2;
+    document.getElementById("button2").value = memeQuestion3.option3;
+    document.getElementById("button3").value = memeQuestion3.option4;
+
+    document.getElementById("question").innerHTML = memeQuestion3.question;
+}
+
+function updateMemeQuestion4() {
+
+    //document.getElementById("questionPicture").src='C:\Users\mehgn\OneDrive\Dokumenter\Brackets\Aflevering1\Christian Eriksen.jpg';
+
+    document.getElementById("button0").value = memeQuestion4.option1;
+    document.getElementById("button1").value = memeQuestion4.option2;
+    document.getElementById("button2").value = memeQuestion4.option3;
+    document.getElementById("button3").value = memeQuestion4.option4;
+
+    document.getElementById("question").innerHTML = memeQuestion4.question;
+}
+
+
+if (location.href == path + 'SportQuestion1.html') {
     updateQuestion1()
 } 
-if (location.href == 'SportQuestion2.html') {
+if (location.href == path +'SportQuestion2.html') {
     updateQuestion2()
 }
-if (location.href == 'SportQuestion3.html') {
+if (location.href == path +'SportQuestion3.html') {
     updateQuestion3()
 }
-if (location.href == 'SportQuestion4.html') {
+if (location.href == path +'SportQuestion4.html') {
     updateQuestion4()
+}   
+if (location.href == path + 'memeQuestion1.html') {
+    updateMemeQuestion1()
+} 
+if (location.href == path +'memeQuestion2.html') {
+    updateMemeQuestion2()
 }
-
-if (location.href == 'musicQuestion1.html') {
+if (location.href == path +'memeQuestion3.html') {
+   updateMemeQuestion3()
+}
+if (location.href == path +'memeQuestion4.html') {
+   updateMemeQuestion4()
+}
+if (location.href == path +'musicQuestion1.html') {
     updateMusicQuestion1()
 }
-
-if (location.href == 'musicQuestion2.html') {
+if (location.href == path +'musicQuestion2.html') {
     updateMusicQuestion2()
 }
-
-if (location.href == 'musicQuestion3.html') {
+if (location.href == path +'musicQuestion3.html') {
     updateMusicQuestion3()
 }
-
-if (location.href == 'musicQuestion4.html') {
+if (location.href == path +'musicQuestion4.html') {
     updateMusicQuestion4()
+}
+if (location.href == path +'AnimalQuestion1.html') {
+    updateAnimalQuestion1()
+}
+if (location.href == path +'AnimalQuestion2.html') {
+    updateAnimalQuestion2()
+}
+if (location.href == path +'AnimalQuestion3.html') {
+    updateAnimalQuestion3()
+}
+if (location.href == path +'AnimalQuestion4.html') {
+    updateAnimalQuestion4()
 }
