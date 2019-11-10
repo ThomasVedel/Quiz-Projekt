@@ -31,6 +31,13 @@ var animalQuestion3 = new Question(3, 'Where is the horse from the greatest hors
 var animalQuestion4 = new Question(4, 'Out of 12, how many dogs survived the Titanic disaster?', "2", "3", "4", "5", "3");
 
 
+//function start() {
+//    updateQuestion1();
+//    updateQuestion2();
+//}
+
+
+
 function updateQuestion1() {
     document.getElementById("button0").value = sportQuestion1.option1;
     document.getElementById("button1").value = sportQuestion1.option2;

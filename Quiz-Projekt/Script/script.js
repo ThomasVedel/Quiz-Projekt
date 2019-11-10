@@ -3,6 +3,7 @@
 var questionCounter = 1;
 var question = "";
 var path = "file:///C:/wamp64/www/Quiz/Quiz-Projekt/View/";
+//var path = "C:\wamp64\www\Quiz\Quiz-Projekt\View\";
 function wrongGuess() {
     document.getElementById("checkAnswer").innerHTML = "False";
 
